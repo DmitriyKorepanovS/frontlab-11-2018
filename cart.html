@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shop</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+          <img src="images/logo.svg" alt="logo" width="60px">
+          <form id="header-findform">
+              <input id="findInput" id="find" type="search" name="q" placeholder="Поиск" onchange="document.location.href = 'itemsList.html'">
+          </form>
+          <div class="icon">
+            <a href="cart.html"><img src="images/cart.svg" alt="cart" width="40px" height="40px"></a>
+            <a href="login.html"><img src="images/login.svg" alt="profile" width="40px" height="40px"></a>
+          </div>
+        </div>
+      </header>    
+
+  <main class="content">
+    <div class="cartForm">
+      <div class="product">
+        <img src="images/iphone8.jpg" alt="profile" width="80px" height="80px">
+        <a class="linkDecoration" href="itemsCard.html">iphone8</a>
+        <span>quantity</span>
+        <input type="number" value="1" min="1" max="999" step="1">
+      </div>
+      <div class="product">
+        <img src="images/iphone8.jpg" alt="profile" width="80px" height="80px">
+        <a class="linkDecoration"  href="itemsCard.html">iphone8</a>
+        <span>quantity</span>
+        <input type="number" value="1" min="1" max="999" step="1">
+      </div>
+      <div class="summary">
+        <p>Total:$768</p>
+        <button class="button"> <a class="linkDecoration"   href="index.html">Continue shopping</a></button>
+        <button class="button"> <a class="linkDecoration"  href="adressForm.html">Proceed to Checkout</a></button>
+      </div>
+    </div>
+
+    <div class="basketSummary">
+      <p>Bascket Summary</p>
+      <P>(2 items)</P>
+      <p>Total:$768</p>
+     <button class="button"> <a class="linkDecoration"  href="adressForm.html">Proceed to Checkout</a></button>
+    </div>
+
+  </main>
+
+  <footer class="main-footer ">
+    2018 &copy copyright
+  </footer>
+
+</body>
+
+</html>

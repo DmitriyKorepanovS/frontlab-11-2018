@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shop</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="images/logo.svg" alt="logo" width="60px">
+      <form id="header-findform">
+        <input id="findInput" id="find" type="search" name="q" placeholder="Поиск" onchange="document.location.href = 'itemsList.html'">
+      </form>
+      <div class="icon">
+        <a href="cart.html"><img src="images/cart.svg" alt="cart" width="40px" height="40px"></a>
+        <a href="login.html"><img src="images/login.svg" alt="profile" width="40px" height="40px"></a>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="content">
+    <form class="adressForm" action="orderForm.html">
+      <div class="adressFormWrapper">
+        <div class="shippingAdress">
+          <p class="horizontalAlignmant">Shipping adress</p>
+          <span>Country</span>
+          <select name="Country" id="">
+            <option>Russia</option>
+            <option>Belarus</option>
+            <option>Ukraine</option>
+            <option>Great Britain</option>
+          </select>
+          <p>City
+            <input class="input" pattern="[A-Za-z]{2,}">
+          </p>
+          <p>Adress
+            <input class="input" pattern="[A-Za-z0-9, ]{2,}">
+          </p>
+          <p>Zip
+            <input type="number" min="10000" max="999999999" step="1">
+          </p>
+        </div>
+        <div class="billingAdress">
+          <p class="horizontalAlignmant">Billing adress</p>
+          <span>Country</span>
+          <select name="Country" id="">
+            <option>Russia</option>
+            <option>Belarus</option>
+            <option>Ukraine</option>
+            <option>Great Britain</option>
+          </select>
+          <p>City
+            <input class="input" pattern="[A-Za-z]{2,}">
+          </p>
+          <p>Adress
+            <input class="input" pattern="[A-Za-z0-9, ]{2,}">
+          </p>
+          <p>Zip
+            <input type="number" min="10000" max="999999999" step="1">
+          </p>
+        </div>
+      </div>
+      <p class="horizontalAlignmant"> <input class="button" type="submit" value="Continue"></p>
+
+    </form>
+  </main>
+  <footer class="main-footer">
+    2018 &copy copyright
+  </footer>
+
+</body>
+
+</html>
