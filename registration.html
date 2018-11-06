@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Shop</title>
+  <title>Registrarion</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -13,7 +13,7 @@
       <div class="cross"></div>
       <form class="form" action="index.html">
         <input class="input" placeholder="Email address" pattern="^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$">
-        <input class="input" type="password" placeholder="Password"  pattern="[A-Za-z0-9]{8,}">
+        <input class="input" type="password"  placeholder="Password"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[a-z]).*">
         <input class="button" type="submit" value="Register">
       </form>
       <p class="alignmentRight"><a class="linkDecoration" href="login.html">Sign in</a></p>

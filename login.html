@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Shop</title>
+  <title>Login</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -14,7 +14,7 @@
       <p>Please Sign In</p>
       <form class="form" action="index.html">
         <input class="input" placeholder="Email address" pattern="^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$">
-        <input class="input" type="password" placeholder="Password"  pattern="[A-Za-z0-9]{8,}">
+        <input class="input" type="password" placeholder="Password"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[a-z]).*">
         <p><input type="checkbox">Remember me</p>
         <input class="button" type="submit" value="Sign in">
       </form>

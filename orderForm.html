@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Shop</title>
+  <title>Order form</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -15,7 +15,7 @@
         <div class="cvvCode"><input class="cvvCodeStyle" value="123" type="number" max="999" step="1"></div>
         <input placeholder="0000 0000 0000 0000" pattern="[0-9]{16}">
         <input type="month">
-        <input placeholder="Name Surname">
+        <input placeholder="Name Surname" pattern="^([A-Za-z]+) ([A-Za-z]+)$">
         <input class="button" type="submit" value="Finish">
       </form>
     </div>
